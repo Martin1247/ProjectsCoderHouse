@@ -135,7 +135,7 @@ opacity: 1;
 
 #gif{
     width: 600px;
-    margin-left: 30px;
+    margin-left: 350px;
     border-radius: 30px;
     /*right: 10px;
     bottom: 2px;*/
@@ -306,6 +306,6 @@ margin-bottom: 20px;
 
 #gif{
     width: 400px;
-    margin-left: -200px;
+    margin-left: 30px;
 }
 }
