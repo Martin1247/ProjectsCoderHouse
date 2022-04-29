@@ -1,9 +1,11 @@
 @import "_fuentes.scss";
 
+@mixin mix {
+width:70%;
+}
 *{
     margin: 0px;
     padding: 0;
-
 }
 
 body{
@@ -11,25 +13,20 @@ body{
 }
 
 #fng{
-
+    @include mix;
     display: flex;
     margin:0 auto;
-    width: 70%;
     border-radius: 30px;
     padding-top: 20px;
     align-items: center;
     justify-content: center;
-
- 
 }
 
 
 #ig{
- 
     width: 70px;
     margin-left: 90%;
     border-radius: 20px;
- 
 }
 
 
@@ -41,8 +38,6 @@ body{
     width: 60%;
     margin-left: 30%;
     border-radius: 30px;
-    /*right: 10px;
-    bottom: 2px;*/
 }
 
 .marcas{
@@ -51,24 +46,18 @@ body{
     margin-left: 30px;
     margin-bottom: 30px;
     border-radius: 20px;
-    
 }
-
-
 
         /*Fotos con descripcion de falla, usando metodologia BEM*/
 
 .galeria{
-
-    display: block;   
-    width: 800px;
-    border-radius: 30px;
+    display: flex;   
+    width:50%;
+    border-radius: 10px;
     position: relative;
-    margin-left: 30px;
+    margin-left: 10%;
     margin-top: 10px; 
 }
-
-
 
 #wp{
     width: 10%;
@@ -77,150 +66,7 @@ body{
     border-radius: 20px;
 }
 
-
-
 .fng__pages{
     margin-left:50px;
     width: 20%;
 }
-
-
-
-                  /* Aplicando Grid*/
-/*.contenedor{
-    width: 90%;
-    max-width: 1800px;
-    margin: 0 ;
-    display: grid;
-    grid-gap: 0px ;
-    grid-template-columns: repeat(3,1fr);
-    grid-template-rows: repeat(5, 0.15fr);
-}*/
-
-/*.contenedor .img{
-    grid-column-start: 1;
-    grid-column-end:4;
-}
-
-.contenedor #titulo{
-    grid-column: span 3;
-    
-}
-
-.contenedor .navegacion{
-    grid-column-start:1 ;
-    grid-column: span 3;
-}
-
-.contenedor #gif{
-    grid-column: 2 / 3;
-}
-
-.contenedor footer{
-    grid-column: 1 / 2;
-    margin-bottom: 30px;
-}
-    
-
-                            /*Menu descolgable en barra Nav*/
-/*.navegacion{
-    width: 1400px;
-    margin: 20px auto;
-    background-color:transparent ;
-}
-
-.navegacion ul{
-    list-style: none;
-}
-
-.menu > li{
-    position: relative;
-    display: inline-block;
-}
-
-.menu > li > a{
-    display: block;  
-    padding: 15px 20px;
-    color: rgb(29, 221, 235);
-    font-family:monospace;
-    text-decoration: none;
-    font-size: 30px;
-
-}
-
-.menu li a:hover{
-color: rgb(222, 214, 228);
-transition: all .3s;
-
-}
-
-.submenu {
-position: absolute;
-visibility: hidden;
-opacity: 0;
-transition:  1.5s;
-
-}
-
-.submenu li a{
-    display: block;  
-    padding: 8px;
-    margin-left: 80px;
-    color: rgb(30, 223, 149);
-    text-decoration: none;
-    font-family:fantasy;
-    font-size: 20px;
-    background-color: rgba(32, 32, 32, 0.8);
-    
-}
-
-.menu li:hover .submenu{
-
-visibility: visible;
-opacity: 1;
-}
-*/
-                                /*fin del menu descolgable*/
-
-                            /*Pagina Principal*/
-
-
-
-        /*Media queries*/
-/*@media screen and (max-width:720px) {
-  
-*{
-    max-width: 600px;
- }
-    .navegacion .menu{
-        display: flex;
-        flex-direction: column;
-}
-#fng {
-    width: auto;
-    justify-content: left;
-    margin-left:-10px;
-}
-#titulo{
-        display: flex;
-        flex-direction: wrap;
-        font-size: 50px;
-}
-
-.marcas{
-    width:400px;
-}
-
-#ig {
-    margin-left: 80%;
-    margin-top: 10%;
-}
-#wp{
-    margin-left: 15%;
-}
-
-#gif{
-    width: 400px;
-    margin-left: 30px;
-}
-}*/

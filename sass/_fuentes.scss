@@ -15,15 +15,13 @@ footer{
 }
 
 .galeria__texto{
-    width: 1000px;
-    height: 200px;   
+    width: 100%;   
     color:rgb(179, 212, 241);
-    text-align: center;
-    display: flex;  
-    position: absolute;     
-    margin-left:900px;  
-    margin-top: 200px;  
-    font-size: 50px;
+    display: flex;   
+    margin-left:3%;  
+    margin-top: 3%;  
+    margin-bottom: 30px;
+    font-size: 2em;
     font-family: 'Roboto', sans-serif;
 }
 
@@ -41,29 +39,21 @@ footer{
             transition: all .3s;
 }}
             /*Correccion de Galeria5*/
-.galeria__texto__foto5{
-    width: 900px;
-    height: 200px;
-    color:rgb(179, 212, 241);
-    text-align: center;
-    display: flex;
-    position: absolute;
-    margin-left:870px;
-    margin-top: 20px;      
-    font-size: 45px;
-    font-family: 'Roboto', sans-serif;
-}
+.galeria__texto__foto5 {
+    @extend .galeria__texto;
+    max-width: 90%;
+    }
 
-.servicio{
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+.servicio {
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     color: aliceblue;
     font-size: 50px;
-    top:50px;
-    text-align: center;
+    top: 50px;
     border-top:30px;
+    text-align: center;
     }
     
-    p{
+p {
         font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
         font-size: 30px;
         color: aliceblue;
@@ -73,7 +63,7 @@ footer{
         margin-bottom: 20px;
     }
 
-    .lista {
+.lista {
         color:rgb(196, 179, 179);
         font-size: 25px;
         font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
@@ -83,7 +73,7 @@ footer{
         margin-right: 40px;
     }
     
-    .servicio__titulo{
+.servicio__titulo{
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     color: aliceblue;
     font-size: 70px;
@@ -93,7 +83,7 @@ footer{
     margin-bottom: 20px;
     }
     
-    .opinion {
+.opinion {
         color:rgb(193, 243, 243);
         font-size: 15px;
         font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
@@ -101,3 +91,11 @@ footer{
         margin-bottom: 10px;
         margin-top: 5px;}
     
+.texto_nosotros {
+    p{
+    font-size: 30px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin-left: 80px;
+    margin-right: 100px;
+}
+}
