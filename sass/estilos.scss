@@ -3,16 +3,23 @@
 @mixin mix {
 width:70%;
 }
+
+@mixin acceso {
+    width: 70px;
+    margin-left: 90%;
+    border-radius: 20px;
+
+}
 *{
     margin: 0px;
     padding: 0;
 }
 
-body{
-    background-image: linear-gradient(135deg, #061011, #505488, #2f3f80, #161569, #5a4894, #a950a1, #ff7cae);
+body {
+    background-image: linear-gradient(135deg, #729292, #888ee7, #2b3b7a, #595894, #b6b2c4, #8f9daf, #86979e);
 }
 
-#fng{
+#fng {
     @include mix;
     display: flex;
     margin:0 auto;
@@ -23,24 +30,27 @@ body{
 }
 
 
-#ig{
-    width: 70px;
-    margin-left: 90%;
-    border-radius: 20px;
+.ig {
+   @include acceso;
+margin-left: 80%;
 }
 
+.wp {
+    @include acceso;
+    margin-top: -8.5%;
+}
 
-#titulo:hover{
+#titulo:hover {
     color: #49cdee;
 }
 
-#gif{
+#gif {
     width: 60%;
     margin-left: 30%;
     border-radius: 30px;
 }
 
-.marcas{
+.marcas {
     width: 40%;
     margin-top: 50px;
     margin-left: 30px;
@@ -50,7 +60,7 @@ body{
 
         /*Fotos con descripcion de falla, usando metodologia BEM*/
 
-.galeria{
+.galeria {
     display: flex;   
     width:50%;
     border-radius: 10px;
@@ -59,14 +69,24 @@ body{
     margin-top: 10px; 
 }
 
-#wp{
-    width: 10%;
-    margin-bottom: 20%;
-    margin-left: 90%;
-    border-radius: 20px;
-}
-
-.fng__pages{
+.fng__pages {
     margin-left:50px;
     width: 20%;
+}
+
+.carrousel_img {
+    width: 90%;
+    margin-top: 3%;
+    margin-left: 2%;
+}
+
+.widget {
+    margin-left: -5%;
+    width: 50%;
+    margin-top: 3%;
+    border-radius: 1%;
+}
+
+.arreglo {
+margin-top: 500px;
 }
