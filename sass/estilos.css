@@ -13,17 +13,29 @@ footer {
   font-size: 20px;
 }
 
-.galeria__texto, .galeria__texto__foto5 {
-  width: 50%;
-  color: rgb(233, 238, 241);
-  margin-left: 50%;
-  margin-top: -50%;
-  margin-bottom: 3%;
-  padding: 2%;
-  font-size: 150%;
-  font-family: "Roboto", sans-serif;
+/*.galeria__texto {
+    width: 50%;   
+    color:rgb(233, 238, 241); 
+    padding: 2%;
+    font-size: 150%;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color:rgba($color: #7ef3d6, $alpha: 0.3);
+    border-radius: 10px;
+    margin-left: 5%;
+    margin-top: 1%;
+}*/
+.galeria__text {
   background-color: rgba(126, 243, 214, 0.3);
   border-radius: 10px;
+  width: 100%;
+  color: rgb(233, 238, 241);
+  padding: 2%;
+  font-size: 150%;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  text-align: center;
+  margin-top: 2%;
+  padding-bottom: 4%;
+  margin-bottom: 10%;
 }
 
 .galeria__inicio {
@@ -40,14 +52,11 @@ footer {
   transition: all 0.3s;
 }
 
-/*Correccion de Galeria5*/
-.galeria__texto__foto5 {
-  max-width: 90%;
-}
-
 .servicio {
+  background-color: rgba(126, 243, 214, 0.3);
+  border-radius: 10px;
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
-  color: aliceblue;
+  color: rgb(248, 250, 252);
   font-size: 50px;
   top: 50px;
   border-top: 30px;
@@ -65,7 +74,9 @@ p {
 }
 
 .lista {
-  color: rgb(196, 179, 179);
+  background-color: rgba(126, 243, 214, 0.3);
+  border-radius: 10px;
+  color: rgb(209, 209, 212);
   font-size: 25px;
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
   margin-left: 50px;
@@ -94,10 +105,13 @@ p {
 }
 
 .texto_nosotros p {
+  background-color: rgba(126, 243, 214, 0.3);
+  border-radius: 10px;
   font-size: 30px;
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
   margin-left: 80px;
   margin-right: 100px;
+  border-radius: 1%;
 }
 
 .carrousel_text {
@@ -113,7 +127,7 @@ p {
 }
 
 body {
-  background-image: linear-gradient(135deg, #729292, #888ee7, #2b3b7a, #595894, #b6b2c4, #8f9daf, #86979e);
+  background-image: linear-gradient(135deg, #729292, #888ee7, #6783f1, #9e9dd8, #b0a1e7, #8f9daf, #86979e);
 }
 
 #fng {
@@ -126,28 +140,44 @@ body {
   justify-content: center;
 }
 
+/* Acomodo de vinculos de contacto*/
+.vinculo {
+  display: flex;
+  justify-content: end;
+}
+
 .ig {
-  width: 70px;
-  margin-left: 90%;
   border-radius: 20px;
-  margin-left: 80%;
+  max-width: 50px;
+  width: 100%;
+  margin: 20px;
 }
 
 .wp {
-  width: 70px;
-  margin-left: 90%;
   border-radius: 20px;
-  margin-top: -8.5%;
+  max-width: 50px;
+  width: 100%;
+  margin: 20px;
 }
 
+/* Fin Acomodo de vinculos de contacto*/
 #titulo:hover {
   color: #49cdee;
 }
 
 #gif {
-  width: 60%;
-  margin-left: 30%;
+  display: block;
+  width: 50%;
+  margin-left: 0rem;
   border-radius: 30px;
+  margin-top: 0rem;
+}
+
+.mapa {
+  margin-left: 55%;
+  display: block;
+  margin-top: -25%;
+  width: 50%;
 }
 
 .marcas {
@@ -174,18 +204,44 @@ body {
 }
 
 .carrousel_img {
-  width: 90%;
+  margin-top: 2%;
+}
+
+.carrousel-ig {
+  display: flex;
+  flex-flow: wrap;
   margin-top: 3%;
-  margin-left: 2%;
+  margin-left: 5%;
 }
 
 .widget {
-  margin-left: -5%;
-  width: 50%;
-  margin-top: 3%;
   border-radius: 1%;
+  margin-left: 5%;
 }
 
 .arreglo {
   margin-top: 500px;
+}
+
+.carrousel-nt {
+  width: 50%;
+  margin-left: 19%;
+  margin-top: 20px;
+}
+
+.img_ns {
+  width: 40%;
+  border-radius: 15px;
+  box-shadow: 5px 8px 12px rgb(63, 62, 62);
+  display: block;
+  margin-top: 0rem;
+  margin-left: 12rem;
+}
+
+.nos {
+  width: 30rem;
+  border-radius: 10px;
+  box-shadow: 1px 1px 5px 3px rgb(5, 25, 63);
+  margin-left: 20px;
+  margin-top: 20px;
 }/*# sourceMappingURL=estilos.css.map */
